@@ -1,0 +1,9 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Search Recipes and Manage Pantry"
+preserveTaxonomyNames = true
+
+[taxonomies]
+vegan = "vegan"
+cuisine = "cuisine"
+collections = "collections"

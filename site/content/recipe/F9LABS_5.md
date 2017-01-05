@@ -1,0 +1,19 @@
++++
+collections = ["Desserts"]
+cuisine = ["North Indian"]
+date = "2016-02-04T04:14:04.3583862Z"
+vegan = []
+title = "Gulab Jamun"
+description = "Fried milk dumplings in a sweet syrup - a quick version"
+servings = "60 jamuns"
+image_id = "wdAPbNjA"
+total_time = "PT75M"
+total_time_pretty = "75 minutes"
+chef = "Sirisha Tadimalla"
+spice_level = 0
+overnight_preparation = 0
+ingredients_count = 7
+num_accompaniments = 0
+ingredients_html = "<ul style='padding-left: 0; list-style: none;'><li style='margin: 8px 0px;padding: 8px 0px;'><span style='font-size: medium; color: #f78153;'>For the Jamuns</span></li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>3 cups milk powder</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tbsp semolina</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 cup pancake mix</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>Full cream, to make a dough</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>Oil, for deep frying</li><li style='margin: 8px 0px;padding: 8px 0px;'><span style='font-size: medium; color: #f78153;'>For the syrup</span></li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>3 cups granulated white sugar</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>3 cups water</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp green cardamom powder</li></ul>"
+steps_html = "<ol style='list-style: none inside; padding-left: 0px;'><li style='list-style: none; margin: 8px 0px;padding: 8px 0px;'><span style='font-size: medium; color: #f78153;'>To make the syrup</span><ol style='list-style: none inside; padding-left: 0px;'><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Mix the sugar and water in a large pot and bring to a boil</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Turn down the heat, add the cardamom powder and simmer for a few minutes </span></li></ol></li><li style='list-style: none; margin: 8px 0px;padding: 8px 0px;'><span style='font-size: medium; color: #f78153;'>To make the Jamuns</span><ol style='list-style: none inside; padding-left: 0px;'><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Mix all the dry ingredients and use enough cream to make a soft dough. Do not knead</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Divide the dough into 60 small balls (Jamuns). Apply oil to your hands to keep the from sticking too much</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Heat oil in a fryer or a deep pan</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Fry the Jamuns until golden brown and keep aside on paper towels for 2-3 minutes</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Then place them in the syrup and allow them to soak for a while. They will become soft all the way through. Check one to confirm</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Transfer the soaked Jamuns into a different container to make space for the remaining Jamuns </span></li></ol></li></ol>"
++++

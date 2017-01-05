@@ -1,0 +1,13 @@
+<div class="col-xs-12">
+	<div class="ui-item">		
+		<div class="content">
+			<a href="{{ .Permalink }}">
+				<div>
+					<span class="h3">{{ .Title }}</span>				
+					<em>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em>
+				</div>
+				<p>{{ .Description }}</p>			
+			</a>
+		</div>
+	</div>
+</div>

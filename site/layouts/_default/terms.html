@@ -1,0 +1,41 @@
+{{ partial "header.html" . }}
+{{ partial "banner_ad.html" . }}
+{{ $baseUrl := $.Site.BaseURL }}
+{{ $data := .Data }}
+{{ $singular := .Data.Singular }}
+{{ $plural :=  .Data.Plural }}
+<div class="container-black ui-208">
+    <div class="container">
+        {{ if eq $singular "vegan" }}
+            {{ range $key,$value := .Data.Terms.ByCount }}
+                <h3 style="margin: 0px; line-height: 35px; padding-top: 20px;">
+                    <span class="orange">{{ len $value.Pages }}</span> <span class="white" >Vegan Recipes</span>
+                </h3>
+                <hr class="br-white" style="margin: 0;" />
+                <div class="row recipes-list" style="margin-top: 20px;">
+                    {{ range $value.Pages.ByDate }}
+                        {{ .Render "li" }}
+                    {{ end }}
+                </div>                
+            {{ end }}
+        {{ else }}                     
+            <h3 style="margin: 0px; line-height: 35px; padding-top: 20px;">
+                <span class="orange">{{ len $data.Terms }}</span>
+                <span class="white">
+                {{ if eq $plural "cuisine" }}
+                    cuisines    
+                {{ else }}
+                    {{ $plural }}
+                {{ end }}
+                </span>
+            </h3>
+            <hr class="br-white" style="margin: 0;" />
+            <div class="row recipes-list" style="margin-top: 20px;">
+                {{ range $key,$value := $data.Terms.ByCount }}
+                    {{ partial "box.html" (dict "name" $value.Name "type" $singular "baseUrl" $baseUrl) }}
+                {{ end }}
+            </div>             
+        {{ end }} 
+    </div>    
+</div>
+{{ partial "footer.html" . }}
