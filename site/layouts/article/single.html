@@ -10,7 +10,7 @@
                         <em>Last updated: {{ dateFormat "2 Jan 2006" .Date }}</em>
                     </div>
                     <div class="clearfix"></div>	                  
-					{{ .Params.article_html | safeHTML }}
+					{{ .Content }}
 				</div>
             </div>
         </div>
