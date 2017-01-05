@@ -1,0 +1,41 @@
+{{ partial "header" . }}
+{{ partial "banner_ad" . }}
+<div class="container-black howItWorks">
+    <div class="container">
+        <div class="row content">
+            <div class="col-sm-12">
+                <h2 class="blue text-center" style="padding: 20px;">Android and iPhone apps coming soon!</h2>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-sm-7">
+                <h4 class="orange">Search for recipes</h4>
+                <div class="row">
+                    <a class="col-sm-4 limitToPantry center-block">
+                        <img src="{{ .Site.BaseURL }}stock-images/refrigerator.svg" class="img">
+                        <p>Limit to Pantry</p>
+                    </a>
+                    <a class="col-sm-4 multipleIngredients center-block">
+                        <img src="{{ .Site.BaseURL }}stock-images/basket.svg" class="img">
+                        <p>Multiple Ingredients</p>
+                    </a>
+                    <a class="col-sm-4 advancedFilters center-block">
+                        <img src="{{ .Site.BaseURL }}stock-images/colander.svg" class="img">
+                        <p>Advanced Filters</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <h4 class="green">Build your pantry</h4>
+                <div class="row">
+                    <a class="col-sm-12 trackIngredients center-block">
+                        <img src="{{ .Site.BaseURL }}stock-images/calendar.svg" class="img">
+                        <p>Track Ingredients</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="content-detail"></p>
+    </div>
+</div>
+{{ partial "footer" . }}

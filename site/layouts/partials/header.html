@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+	<title>{{ .Title }} - Recipe Shelf</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/rs.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{ .Site.BaseURL }}favicons/manifest.json">
+    <link rel="mask-icon" href="{{ .Site.BaseURL }}favicons/safari-pinned-tab.svg" color="#609cec">
+	{{ partial "meta.html" . }}
+</head>
+<body class="background">
+<script>       
+    {{ if (and .IsNode (or (and (ne .Title "Collections") (eq .Data.Plural "collections")) (and (ne .Title "Cuisine") (eq .Data.Plural "cuisine")))) }}
+        document.body.style.backgroundImage = "url('{{ .Site.BaseURL }}stock-images/{{ .Title }}.jpg')";
+    {{ else }}
+        window.changeBackground = function () {        
+            document.body.style.backgroundImage = "url('{{ .Site.BaseURL }}stock-images/back" + Math.floor(((Math.random() * 10) % 6) + 1) + ".jpg')";
+        };    
+        window.changeBackground();
+        window.setTimeout(window.changeBackground, 60000);
+    {{ end }}
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1043357765687349',
+            xfbml: true,
+            version: 'v2.4'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    window.pAsyncInit = function () {
+        PDK.init({
+            appId: "4798178932820017348", // Change this
+            cookie: true
+        });
+    };
+
+    (function (d, s, id) {
+        var js, pjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//assets.pinterest.com/sdk/sdk.js";
+        pjs.parentNode.insertBefore(js, pjs);
+    }(document, 'script', 'pinterest-jssdk'));
+</script>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <a href="{{ .Site.BaseURL }}"><img class="img img-responsive" src="{{ .Site.BaseURL }}stock-images/logo.png" /></a>
+                <a href="{{ .Site.BaseURL }}"><h1 class="orange">Recipe</h1><h1 class="green">Shelf</h1></a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ .Site.BaseURL }}collections/">Collections</a></li>
+                    <li><a href="{{ .Site.BaseURL }}cuisine/">Cuisines</a></li>
+                    <li><a href="{{ .Site.BaseURL }}vegan/">Vegan</a></li>
+                </ul>                
+        </div>
+    </div>
+</div>
+<br />
+<div class="main-body">

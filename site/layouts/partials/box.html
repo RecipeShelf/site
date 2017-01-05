@@ -1,0 +1,13 @@
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	<div class="ui-item">	
+        <div>
+            <a href="{{ .baseUrl }}{{ .type }}/{{ .name | urlize }}/"><img class="img-responsive" src="{{ $.baseUrl }}stock-images/{{ .name }}.jpg" alt="{{ .name }} Image" data-pin-no-hover="true"></a>
+        </div>
+		<div class="content">
+			<div class="text-center">
+				<span class="h3">{{ .name }}</span>
+            </div>
+		</div>  
+	</div>
+</div>
+<div class="clear"></div>

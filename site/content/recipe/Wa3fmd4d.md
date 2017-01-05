@@ -1,0 +1,20 @@
++++
+collections = ["Dinner","Lunch","Main course","One-pot meals","Rice dishes"]
+cuisine = ["North Indian"]
+date = "2016-02-05T03:48:08.8250281Z"
+vegan = ["vegan"]
+title = "Quick Vegetable Pulao"
+description = "A fragrant rice dish with mixed vegetables and spices"
+servings = "Serves 4"
+image_id = "hvcCJt2e"
+total_time = "PT45M"
+total_time_pretty = "45 minutes"
+chef = "Sirisha Tadimalla"
+spice_level = 2
+overnight_preparation = 0
+ingredients_count = 19
+accompaniments_html = "<ul><li><a href = '../j0zJH2xB/'>Onion-Tomato Raita</a></li></ul>"
+num_accompaniments = 1
+ingredients_html = "<ul style='padding-left: 0; list-style: none;'><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2 cups basmati rice or any other long-grain rice, brown or white or a mix of both</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 large (or 300 g) onion, sliced</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>250 g potatoes, diced</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>200 g carrots, diced</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 green capsicum (green bell pepper), chopped, optional</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>½ cup green peas</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 cup green beans, 1\" pieces</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>5-6 green chillies, slit lengthwise (adjust based on your spice/heat tolerance)</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 bay leaf</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>6 cloves</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 black cardamom</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>3 green cardamom</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2\" piece of cinnamon</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2 tsp ground coriander</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp ground cumin</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp garam masala powder</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>4 tbsp oil</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>4 cups water</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>Salt, to taste</li></ul>"
+steps_html = "<ol style='list-style: none inside; padding-left: 0px;'><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Heat the oil in a pot or a {pressure cooker} or an {electric rice cooker}</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add the bay leaf, cloves, black and green cardamom, cinnamon and fry till the cloves swell</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add the green chillies and onion and saute till translucent</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add all the vegetables and cook for 2-3 minutes while stirring occasionally</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Mix in the coriander, cumin and garam masala powders. Continue frying for about a minute and then add the rice, water and salt</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Cook until the rice is soft and fluffy. Serve hot with {Onion-Tomato Raita}</span></li></ol>"
++++

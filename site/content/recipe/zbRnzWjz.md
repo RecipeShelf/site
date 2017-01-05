@@ -1,0 +1,19 @@
++++
+collections = ["Curries","Side dishes"]
+cuisine = ["North Indian"]
+date = "2016-02-05T04:07:40.9854814Z"
+vegan = []
+title = "Tawa Paneer"
+description = "A quick and easy curry with North Indian spices"
+servings = "Serves 4"
+image_id = "AB_2oKAG"
+total_time = "PT30M"
+total_time_pretty = "30 minutes"
+chef = "Sirisha Tadimalla"
+spice_level = 3
+overnight_preparation = 0
+ingredients_count = 21
+num_accompaniments = 0
+ingredients_html = "<ul style='padding-left: 0; list-style: none;'><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>300 g fresh paneer, cut into cubes</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2 medium-sized (or 400 g) onions, finely chopped</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>300 g tomatoes, chopped and pureed or ¼ cup of passata</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2 tsp ginger-garlic paste or 1 tsp garlic, crushed and 1 tsp ginger, crushed</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2-3 green chillies, slit lengthwise (adjust based on your spice/heat tolerance)</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>3 tbsp butter or oil</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2 tsp ground coriander</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp carom seeds (ajwain), optional</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>½ tsp turmeric powder</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>½ tsp red chilli powder</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp garam masala powder</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>¼ tsp dry mango powder (amchur), optional</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp white or brown sugar, optional</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tbsp dried fenugreek leaves (kasoori methi), optional</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>Salt, to taste</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>fresh coriander, chopped, optional</li></ul>"
+steps_html = "<ol style='list-style: none inside; padding-left: 0px;'><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Heat the butter or oil in a large saucepan. Add the carom seeds (ajwain), ginger, garlic and onions and fry till the onions are soft and translucent</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add the green chillies, coriander powder, turmeric, red chilli powder, garam masala, dry mango powder (amchur) and fry for a minute</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add the pureed tomatoes and cook till you can see oil separating out towards the sides of the pan</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add the sugar and dried fenugreek leaves (kasoori methi), mix in salt as needed </span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add the paneer and cook covered for 2-3 minutes</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Serve hot with chapati, paratha or naan</span></li></ol>"
++++

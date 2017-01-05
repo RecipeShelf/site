@@ -1,0 +1,19 @@
++++
+collections = ["Chutneys"]
+cuisine = ["South Indian"]
+date = "2016-02-05T01:13:39.6166672Z"
+vegan = ["vegan"]
+title = "Allam Pachadi"
+description = "A spicy and tangy chutney made with ginger, tamarind and jaggery"
+servings = "Makes 1 cup"
+total_time = "PT15M"
+total_time_pretty = "15 minutes"
+chef = "Sirisha Tadimalla"
+spice_level = 3
+overnight_preparation = 0
+ingredients_count = 13
+accompaniments_html = "<ul><li><a href = '../K9jBEZw9/'>Pesarattu</a></li><li><a href = '../wqTVsyx_/'>Ragi Dosa</a></li><li><a href = '../byofAHE7/'>Medu Vada</a></li></ul>"
+num_accompaniments = 3
+ingredients_html = "<ul style='padding-left: 0; list-style: none;'><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>20 g ginger, peeled and roughly chopped</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>15-20 g tamarind, remove seeds</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>18-20 dried red chillies, broken into small pieces</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>30-35 g jaggery or 25 g brown sugar</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>1 tsp fenugreek seeds</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>2 tsp mustard seeds</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>4 tsp urad dal (black gram)</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>½ tsp turmeric powder</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>¼ tsp hing (asafoetida)</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>8-10 curry leaves</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>¼ cup oil</li><li itemprop='recipeIngredient' style='margin: 8px 0px;padding: 8px 0px;'>Salt, to taste</li></ul>"
+steps_html = "<ol style='list-style: none inside; padding-left: 0px;'><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Heat oil in a saucepan. Fry the fenugreek seeds and black gram (urad dal) till they start to brown</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add dried red chillies, mustard seeds, curry leaves and hing. Wait for the mustard seeds to splutter. Turn off the heat, drain the oil into a bowl and set aside</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Grind ¾th of the spice mixture along with the ginger, turmeric, tamarind and jaggery to form a smooth paste. Add some of the drained oil to make it easier to grind</span></li><blockquote>Use a {mortar and pestle} if you are making very small quantities. Otherwise, use an {Indian mixie grinder}, {spice mill} or {magic bullet} or something similar. Regular blenders are too large, so they will just toss the contents around instead of grinding them</blockquote><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Add salt to taste. Adjust the amounts of tamarind (sour) and jaggery (sweet) according to your taste</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Mix in the remaining spice mixture and oil. Store in an airtight container. The chutney has a shelf life of a couple of days, but it is best eaten fresh</span></li><li style='padding-bottom: 10px;'><i class='step-track-icon fa fa-square-o'></i><span class='step-text' itemprop='recipeInstructions'>Can be served with {Pesarattu}, {Ragi Dosa} and {Medu Vada}</span></li></ol>"
++++
