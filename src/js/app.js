@@ -36,27 +36,7 @@ cb.initApp = function () {
         cursorcolor: "rgba(0,0,0,0.2)",
         cursorwidth: "5px"
     });
-    
-    $body.off('click', '.howItWorks .limitToPantry');
-    $body.on('click', '.howItWorks .limitToPantry', function (e) {
-        cb.updateHowItWorksContentDetail($('.howItWorks .limitToPantry'), 'Select the ‘Limit to pantry’ box to see what you can make now. Recipes will be sorted by expiring ingredients.');
-    });
-
-    $body.off('click', '.howItWorks .multipleIngredients');
-    $body.on('click', '.howItWorks .multipleIngredients', function (e) {
-        cb.updateHowItWorksContentDetail($('.howItWorks .multipleIngredients'), 'Combine several ingredients into one search. For example, entering ‘potato’ and ‘carrot’ will give you potato recipes as well as carrot recipes.');
-    });
-
-    $body.off('click', '.howItWorks .advancedFilters');
-    $body.on('click', '.howItWorks .advancedFilters', function (e) {
-        cb.updateHowItWorksContentDetail($('.howItWorks .advancedFilters'), 'Advanced filters can be used in several combinations. For example, you can find Thai or Malaysian recipes that are mild or medium spiced.');
-    });
-
-    $body.off('click', '.howItWorks .trackIngredients');
-    $body.on('click', '.howItWorks .trackIngredients', function (e) {
-        cb.updateHowItWorksContentDetail($('.howItWorks .trackIngredients'), 'Add ingredients manually or from grocery receipts and select their expiry dates. Days left till expiry will be shown in orange (less than 2 days), blue (less than a week) and green (more than a week).');
-    });
-
+  
     $body.off('click', '.shareByFacebook');
     $body.on('click', '.shareByFacebook', function (e) {
         amplitude.logEvent("Share by Facebook Clicked", { recipe: $(this).closest('.widget').find('.name').text() });
@@ -75,13 +55,6 @@ cb.initApp = function () {
         var image_url = $btn.data('image-url');
         PDK.pin(image_url, '', url, function (response) { });
     });
-};
-
-cb.updateHowItWorksContentDetail = function ($a, text) {
-    $('.howItWorks a').removeAttr('style');
-    $a.css('color', '#609cec');
-    $('.howItWorks .content-detail').text(text);
-    $('.howItWorks .content-detail')[0].scrollIntoView();
 };
 
 $(document).ready(function () {

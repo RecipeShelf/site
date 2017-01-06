@@ -1,41 +1,16 @@
 {{ partial "header" . }}
 {{ partial "banner_ad" . }}
-<div class="container-black howItWorks">
+<div class="container-black ui-208">
     <div class="container">
-        <div class="row content">
-            <div class="col-sm-12">
-                <h2 class="blue text-center" style="padding: 20px;">Android and iPhone apps coming soon!</h2>
-            </div>
+    	<h3 style="margin: 0px; line-height: 35px; padding-top: 20px;">
+            <span class="white">Recipes for this week!</span>
+        </h3>
+        <hr class="br-white" style="margin: 0;" />
+        <div class="row recipes-list" style="margin-top: 20px;">
+            {{ range where .Data.Pages ".Title" "in" (slice "Pindi Chole" "Panzanella" "Kulfi" "Red Lentils Soup") }}              
+                {{ .Render "li"}}
+            {{ end }}
         </div>
-        <div class="row content">
-            <div class="col-sm-7">
-                <h4 class="orange">Search for recipes</h4>
-                <div class="row">
-                    <a class="col-sm-4 limitToPantry center-block">
-                        <img src="{{ .Site.BaseURL }}stock-images/refrigerator.svg" class="img">
-                        <p>Limit to Pantry</p>
-                    </a>
-                    <a class="col-sm-4 multipleIngredients center-block">
-                        <img src="{{ .Site.BaseURL }}stock-images/basket.svg" class="img">
-                        <p>Multiple Ingredients</p>
-                    </a>
-                    <a class="col-sm-4 advancedFilters center-block">
-                        <img src="{{ .Site.BaseURL }}stock-images/colander.svg" class="img">
-                        <p>Advanced Filters</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-5">
-                <h4 class="green">Build your pantry</h4>
-                <div class="row">
-                    <a class="col-sm-12 trackIngredients center-block">
-                        <img src="{{ .Site.BaseURL }}stock-images/calendar.svg" class="img">
-                        <p>Track Ingredients</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <p class="content-detail"></p>
     </div>
 </div>
 {{ partial "footer" . }}

@@ -793,38 +793,6 @@ footer > .container > div > .copyright {
     }
 }
 
-#aboutModal p
-{
-    padding: 5px;
-}
-
-/* Home Specific CSS */
-.howItWorks h4 {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 25px;
-}
-
-.howItWorks a {
-    font-size: 18px;
-    color: #ffffff;
-    cursor: pointer;
-    text-align: center;
-}
-
-.howItWorks a:hover {
-    color: #666666;
-}
-
-.howItWorks p {
-    padding: 15px;
-}
-
-.howItWorks .content-detail {
-    color: #ffffff;
-    font-size: 17px;
-}
-
 /* Recipe Summary CSS */
 .ui-208 .ui-item {
     margin: 0px auto 20px auto;
