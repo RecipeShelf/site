@@ -731,65 +731,78 @@ footer > .container {
     vertical-align: middle;
 }
 
-footer > .container > div > a {
+footer .links > a {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 75px;
     white-space: nowrap;
 }
 
-footer > .container > div > .copyright {
+footer .copyright {
     float: right;
     white-space: nowrap;
 }
 
+footer .netlify {
+    float: right;
+}
+
+footer .netlify > img {    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media(max-width: 991px) {
-    footer > .container > div > hr {
+    footer hr {
         display: none;
     }
 
-    footer > .container > div > .copyright {
+    footer .copyright {
         float: none;
     }
 
-    footer > .container > div > a {
+    footer .links > a {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 50px;
         white-space: nowrap;
     }
-}
 
-@media(max-width: 485px) {
-    .main-body {
-        margin: 0 auto -150px;
-        padding-bottom: 150px;
-    }
-
-    footer {
-        height: 150px;
+    footer .netlify {
+        float: none;
     }
 }
 
-@media(max-width: 340px) {
+@media(max-width: 800px) {
     .main-body {
-        margin: 0 auto -170px;
-        padding-bottom: 170px;
+        margin: 0 auto -145px;
+        padding-bottom: 145px;
     }
 
     footer {
-        height: 170px;
+        height: 145px;
+    }
+}
+
+@media(max-width: 415px) {
+    .main-body {
+        margin: 0 auto -195px;
+        padding-bottom: 195px;
+    }
+
+    footer {
+        height: 195px;
     }
 }
 
 @media(max-width: 277px) {
     .main-body {
-        margin: 0 auto -240px;
-        padding-bottom: 240px;
+        margin: 0 auto -245px;
+        padding-bottom: 245px;
     }
 
     footer {
-        height: 240px;
+        height: 245px;
     }
 }
 
