@@ -30,7 +30,7 @@
                 </span>
             </h3>
             <hr class="br-white" style="margin: 0;" />
-            <div class="row recipes-list" style="margin-top: 20px;">
+            <div class="row recipes-list" style="margin-top: 20px;">                
                 {{ range $key,$value := $data.Terms.ByCount }}
                     {{ partial "box.html" (dict "name" $value.Name "type" $singular "baseUrl" $baseUrl) }}
                 {{ end }}

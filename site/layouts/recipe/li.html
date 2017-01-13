@@ -8,10 +8,10 @@
 				<span class="h3">{{ .Title }}</span>
 				<span class='pull-right'>
 					{{ range (seq (sub 3 (add 0 .Params.spice_level))) }}
-						<img src='{{ $.Site.BaseURL }}stock-images/PlainChili.svg' height='25'>
+						<img src='{{ $.Site.BaseURL }}vector-images/PlainChili.svg' height='25'>
 					{{ end }}
 					{{ range (seq (add 0 .Params.spice_level)) }}			
-						<img src='{{ $.Site.BaseURL }}stock-images/RedChili.svg' height='25'>	
+						<img src='{{ $.Site.BaseURL }}vector-images/RedChili.svg' height='25'>	
 					{{ end }}
 				</span>
 			</div>
