@@ -29,10 +29,10 @@
 <body class="background">
 <script>       
     {{ if (and .IsNode (or (and (ne .Title "Collections") (eq .Data.Plural "collections")) (and (ne .Title "Cuisine") (eq .Data.Plural "cuisine")))) }}
-        document.body.style.backgroundImage = "url('http://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/stock-images/{{ .Title }}.jpg')";
+        document.body.style.backgroundImage = "url('https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/stock-images/{{ .Title }}.jpg')";
     {{ else }}
         window.changeBackground = function () {        
-            document.body.style.backgroundImage = "url('http://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/stock-images/back" + Math.floor(((Math.random() * 10) % 6) + 1) + ".jpg')";
+            document.body.style.backgroundImage = "url('https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/stock-images/back" + Math.floor(((Math.random() * 10) % 6) + 1) + ".jpg')";
         };    
         window.changeBackground();
         window.setTimeout(window.changeBackground, 60000);
