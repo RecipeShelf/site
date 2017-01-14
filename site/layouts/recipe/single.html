@@ -1,4 +1,5 @@
-{{ $.Scratch.Set "RecipeImage" .Params.image_id }}
+{{ $imagename := replace .Params.image_id " " "_" }}
+{{ $.Scratch.Set "RecipeImage" $imagename }}
 {{ partial "header.html" . }}
 <div class="container">
     <div class="ui-315" style="margin-top:0;">        
@@ -17,7 +18,7 @@
                                 <span style="padding-right: 10px;"></span>
                                 <a data-href='{{ .Permalink }}' class="shareByFacebook" title="Post on facebook" style="padding-right: 5px;"><i class="fa fa-facebook blue"></i></a>
                                 <span style="padding-right: 10px;"></span>
-                                <a data-href='{{ .Permalink }}' data-image-url="{{ .Site.BaseURL }}images/{{ .Params.image_id }}.4x.jpg" class="shareByPinterest" title="Pin recipe" style="padding-right: 5px;"><i class="fa fa-pinterest red"></i></a>                        
+                                <a data-href='{{ .Permalink }}' data-image-url="https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/recipe-images/{{ $imagename }}.jpg" class="shareByPinterest" title="Pin recipe" style="padding-right: 5px;"><i class="fa fa-pinterest red"></i></a>                        
                             </div>
                         <meta itemprop="url" content="{{ .Permalink }}" />
                     </div>
@@ -55,7 +56,7 @@
                             </div>
                         {{ end }}
                         {{ if (isset .Params "image_id") }}
-                            <img itemprop="image" class="recipe-image img img-responsive" src="{{ .Site.BaseURL }}images/{{ .Params.image_id }}.2x.jpg" srcset="{{ .Site.BaseURL }}images/{{ .Params.image_id }}.2x.jpg 1x, {{ .Site.BaseURL }}images/{{ .Params.image_id }}.4x.jpg 2x" data-pin-no-hover="true" />
+                            <img itemprop="image" class="recipe-image img img-responsive" src="https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/recipe-images/{{ $imagename }}.jpg" data-pin-no-hover="true" />
                         {{ end }}
                     </div>
                 </div>

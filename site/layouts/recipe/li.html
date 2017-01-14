@@ -1,7 +1,8 @@
+{{ $imagename := replace .Params.image_id " " "_" }}
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 	<div class="ui-item">	
 		{{ if (isset .Params "image_id") }}	
-			<a href="{{ .Permalink }}"><img class="img-responsive" src="{{ $.Site.BaseURL }}images/{{ .Params.image_id }}.jpg" srcset="{{ $.Site.BaseURL }}images/{{ .Params.image_id }}.jpg 1x, {{ $.Site.BaseURL }}images/{{ .Params.image_id }}.2x.jpg 2x" alt="{{ .Title }} Image" onerror="this.style.display='none';" data-pin-no-hover="true"></a>
+			<a href="{{ .Permalink }}"><img class="img-responsive" src="https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/recipe-images/{{ $imagename }}.jpg" alt="{{ .Title }} Image" onerror="this.style.display='none';" data-pin-no-hover="true"></a>
 		{{ end }}
 		<div class="content">
 			<div>
