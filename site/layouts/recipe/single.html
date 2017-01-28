@@ -48,13 +48,21 @@
                         <h5><strong class="blue">Steps</strong><time itemprop="totalTime" class="totalTime" datetime="{{ .Params.total_time }}"> - {{ .Params.total_time_pretty }}</time></h5>
                         <div class="steps">
                             {{ .Params.steps_html | safeHTML }}
-                        </div>
-                        {{ if ge .Params.num_accompaniments 1 }}
-                            <h5><strong class="blue">Related</strong> - {{ .Params.num_accompaniments }}</h5>
+                        </div>  
+                        {{ if (isset .Params "accompaniment_ids") }}
+                            {{ $num_accompaniments := len .Params.accompaniment_ids }}
+                            <h5><strong class="blue">Related</strong> - {{ $num_accompaniments }}</h5>
                             <div class="accompaniments">
-                                {{ .Params.accompaniments_html | safeHTML }}
-                            </div>
-                        {{ end }}
+                            {{ range .Params.accompaniment_ids }}
+                                {{ $accompaniment_id := . }}
+                                {{ range $.Site.Pages }} 
+                                    {{ if eq .File.BaseFileName $accompaniment_id }}
+                                        <a href = '../{{ $accompaniment_id }}/'>{{ .LinkTitle }}</a>
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}   
+                            </div>                     
+                        {{ end }}                        
                         {{ if (isset .Params "image_id") }}
                             <img itemprop="image" class="recipe-image img img-responsive" src="https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/recipe-images/{{ $imagename }}.jpg" data-pin-no-hover="true" />
                         {{ end }}
