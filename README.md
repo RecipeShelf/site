@@ -1,8 +1,6 @@
-# Victor Hugo
+# RecipeShelf site built on Hugo and hosted on netlify
 
-**A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
-
-This is a boilerplate for using Hugo as a static site generator and Gulp + Weback as your
+This is using Hugo as a static site generator and Gulp + Weback as your
 asset pipeline.
 
 It's setup to use post-css and babel for CSS and JavaScript.
@@ -80,7 +78,7 @@ Now netlify will build and deploy your site whenever you push to git.
 
 You can also click this button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/recipeshelf/site)
 
 
 
