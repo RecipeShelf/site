@@ -1,6 +1,12 @@
 import React from "react"
-import Link from "gatsby-link"
-import Logo from "../images/logo.png"
+import Logo from "../../assets/images/logo.png"
+const Link = (props) => {
+  return (
+    <div>
+      {props.children}
+    </div>
+  );
+};
 
 const Header = () => (
     <div style={{ background: "rgba(34,34,34,.8)", marginBottom: "1.45rem" }}>
