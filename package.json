@@ -10,7 +10,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "standard && jest",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.1.1",
+    "jest": "^21.2.1",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "globals": [ "describe", "it", "expect", "fetch", "URL" ]
   }
 }

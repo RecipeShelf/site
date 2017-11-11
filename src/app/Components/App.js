@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import TemplateWrapper from './TemplateWrapper'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <TemplateWrapper />
-    );
+    )
   }
 }
 
-export default App;
+export default App
