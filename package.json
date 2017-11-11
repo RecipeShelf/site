@@ -3,22 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "jest-enzyme": "^4.0.1",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
     "test": "standard && jest",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "enzyme": "^3.1.1",
     "jest": "^21.2.1",
     "standard": "^10.0.3"
   },
   "standard": {
-    "globals": [ "describe", "it", "expect", "fetch", "URL" ]
+    "globals": [
+      "describe",
+      "it",
+      "expect",
+      "fetch",
+      "URL"
+    ]
   }
 }

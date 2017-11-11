@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.png'
 const Link = (props) => {
   return (
     <div>
@@ -19,7 +19,7 @@ const Header = () => (
     >
       <Link to='/' style={{ margin: 0 }}>
         <img
-          src={Logo}
+          src={logo}
           style={{ width: '36px', display: 'inline', margin: 0 }}
           alt='Logo'
         />
