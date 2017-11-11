@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TemplateWrapper from './TemplateWrapper'
+import TemplateWrapper from './Components/TemplateWrapper'
 
 class App extends Component {
   render () {
