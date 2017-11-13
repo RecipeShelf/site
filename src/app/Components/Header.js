@@ -1,12 +1,6 @@
 import React from 'react'
 import logo from '../../assets/images/logo.png'
-const Link = (props) => {
-  return (
-    <div>
-      {props.children}
-    </div>
-  )
-}
+import { Link } from 'react-router-dom'
 
 const Header = () => (
   <div style={{ background: 'rgba(34,34,34,.8)', marginBottom: '1.45rem' }}>
@@ -27,10 +21,10 @@ const Header = () => (
         <h1 style={{ color: '#51d466', display: 'inline' }}>Shelf</h1>
       </Link>
       <div style={{ float: 'right' }}>
-        <Link to='/collections' style={{ padding: '1rem' }}>
+        <Link to='/collections'>
           Collections
         </Link>
-        <Link to='/cuisines' style={{ padding: '1rem' }}>
+        <Link to='/cuisines'>
           Cuisines
         </Link>
       </div>
