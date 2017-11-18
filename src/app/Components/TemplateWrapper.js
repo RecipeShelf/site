@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Header from './Header'
+import Footer from './Footer'
 import {
   BrowserRouter as Router,
   Route
@@ -67,6 +68,7 @@ const TemplateWrapper = ({ children }) => (
         <Header />
         <Route path="/collections" component={Collections}/>
         <Route path="/cuisines" component={Cuisines}/>
+        <Footer />
       </div>
     </Router>
   </div>
