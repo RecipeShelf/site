@@ -3,24 +3,36 @@ import path from "path";
 
 export default {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file?name=/[hash].[ext]"
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: '[hash].[ext]'
+          }
+        }]
       },
-      {test: /\.json$/, loader: "json-loader"},
       {
-        loader: "babel",
+        test: /\.json$/,
+        type: "json"
+      },
+      {
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        use: [{
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true
+          }
+        }]
       }
     ]
   },
 
   plugins: [
     new webpack.ProvidePlugin({
-      "fetch": "imports?this=>global!exports?global.fetch!whatwg-fetch"
+      fetch: ["whatwg-fetch", "fetch"]
     })
   ],
 
@@ -33,5 +45,5 @@ export default {
     publicPath: "/",
     filename: "[name].js"
   },
-  externals:  [/^vendor\/.+\.js$/]
+  externals: [/^vendor\/.+\.js$/]
 };

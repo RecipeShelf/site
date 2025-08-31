@@ -56,7 +56,7 @@
                             {{ range .Params.accompaniment_ids }}
                                 {{ $accompaniment_id := . }}
                                 {{ range $.Site.Pages }} 
-                                    {{ if eq .File.BaseFileName $accompaniment_id }}
+                                    {{ if and .File (eq .File.BaseFileName $accompaniment_id) }}
                                         <a href = '../{{ $accompaniment_id }}/'>{{ .LinkTitle }}</a>
                                     {{ end }}
                                 {{ end }}
