@@ -1,8 +1,11 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  environment = { NODE_VERSION = "16.20.0" }
+
+[build.environment]
+  HUGO_VERSION = "0.149.0"
+  NODE_VERSION = "16.20.0"
+  GO_VERSION = "1.20"
 
 [context.deploy-preview]
   command = "npm run build-preview"
-  environment = { NODE_VERSION = "16.20.0" }
