@@ -5,7 +5,7 @@ title = "Terms of Service"
 description = "Terms of Service for the website"
 +++
 
-Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the [https://recipeshelf.com.au](/) website (the "Service") operated by Recipe Shelf ("us", "we", or "our").
+Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the [https://recipeshelf.org](/) website (the "Service") operated by Recipe Shelf ("us", "we", or "our").
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
@@ -125,4 +125,4 @@ By continuing to access or use our Service after those revisions become effectiv
 
 ##### Contact Us
 
-If you have any questions about these Terms, please [contact us](mailto:support@recipeshelf.com.au).
+If you have any questions about these Terms, please [contact us](mailto:support@recipeshelf.org).
