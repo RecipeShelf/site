@@ -2,9 +2,8 @@
 {{ $.Scratch.Set "RecipeImage" $imagename }}
 {{ partial "header.html" . }}
 <div class="container">
-    <div class="ui-315" style="margin-top:0;">        
+    <div class="ui-315">
         <div itemscope itemtype="http://schema.org/Recipe" class="widget">
-            <!-- Be careful to update javascript when you make changes here -->
             <div class="w-head">
                 <div class="pull-left">
                     <div>
@@ -13,24 +12,17 @@
                     <span itemprop="description" class="h4 description">{{ .Description }}</span>
                 </div>
                 <div class="pull-right">
-                    <div class="w-links dropdown">
-                            <div class="recipe-share" style="display: inline">
-                                <span style="padding-right: 10px;"></span>
-                                <a data-href='{{ .Permalink }}' class="shareByFacebook" title="Post on facebook" style="padding-right: 5px;"><i class="fa fa-facebook blue"></i></a>
-                                <span style="padding-right: 10px;"></span>
-                                <a data-href='{{ .Permalink }}' data-image-url="https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/recipe-images/{{ $imagename }}.jpg" class="shareByPinterest" title="Pin recipe" style="padding-right: 5px;"><i class="fa fa-pinterest red"></i></a>                        
-                            </div>
+                    <div class="w-links">
+                        <div class="recipe-share">
+                            <a data-href='{{ .Permalink }}' class="shareByFacebook" title="Post on facebook"><i class="fa fa-facebook blue"></i></a>
+                            <a data-href='{{ .Permalink }}' data-image-url="https://res.cloudinary.com/recipe-shelf/image/upload/w_auto,f_auto,fl_lossy,q_auto,dpr_auto/recipe-images/{{ $imagename }}.jpg" class="shareByPinterest" title="Pin recipe"><i class="fa fa-pinterest red"></i></a>
+                        </div>
                         <meta itemprop="url" content="{{ .Permalink }}" />
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
             <div class="w-body plugins-widget" style="display: block;">
-                <div class="row">                
-                    <div class="col-sm-12">
-                        {{ partial "embedded_banner_ad.html" . }}
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-sm-4">
                         <h5>
@@ -40,10 +32,9 @@
                             </span>
                         </h5>
                         <div class="ingredients-list-div w-scroll" style="overflow: hidden; outline: none;">
-                            {{ .Params.ingredients_html | safeHTML }}                            
+                            {{ .Params.ingredients_html | safeHTML }}
                         </div>
-                        {{ partial "box_ad.html" .}}
-                    </div>                    
+                    </div>
                     <div class="col-sm-8 details">
                         <h5><strong class="blue">Steps</strong><time itemprop="totalTime" class="totalTime" datetime="{{ .Params.total_time }}"> - {{ .Params.total_time_pretty }}</time></h5>
                         <div class="steps">

@@ -64,19 +64,3 @@ $(document).ready(function () {
 
     amplitude.logEvent("Page Opened", { page: window.location.href });
 });
-
-cb.ab = function () {
-    if ($('.ad-container .adsbygoogle').children().length === 0) {
-        var $afModal = $('#afModal');
-        if ($afModal.length == 0) {
-            amplitude.logEvent("Ads Blocked");
-            $afModal = $('<div class="modal fade" id="afModal" role="dialog"><div class="modal-dialog" style="width: 80%; height: 80%"><div class="modal-content" style="height: 80%"><div class="modal-header"><h1 class="modal-title blue text-center">Advertising</h1></div><div class="modal-body"><p style="padding: 40px; font-size: large;">This website is supported by advertising. We try to show only relevant and non intrusive ads served by Google. Disable your ad blocker for this site and click refresh to view this page.</p></div></div></div></div>');
-        }
-    	$afModal.modal({backdrop: 'static', keyboard: false});    	
-    }
-    window.setTimeout(cb.ab, 60000);
-};
-
-(function () {
-    window.setTimeout(cb.ab, 60000);
-})();
