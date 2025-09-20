@@ -12,12 +12,27 @@ const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
 const defaultArgs = ["-d", "../dist", "-s", "site"];
 
+function runPagefind(cb) {
+  return cp.spawn("npx", ["pagefind", "--source", "dist"], {stdio: "inherit"}).on("close", (code) => {
+    if (code === 0) {
+      cb();
+    } else {
+      browserSync.notify("Pagefind indexing failed :(");
+      cb("Pagefind indexing failed");
+    }
+  });
+}
+
 function buildSite(cb, options = []) {
   const args = [...defaultArgs, ...options];
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
-      browserSync.reload();
-      cb();
+      runPagefind((err) => {
+        if (!err) {
+          browserSync.reload();
+        }
+        cb(err);
+      });
     } else {
       browserSync.notify("Hugo build failed :(");
       cb("Hugo build failed");

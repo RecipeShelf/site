@@ -1,5 +1,5 @@
  /* Base CSS */
- html {
+html {
     height: 100%;
     overflow-y: scroll;
 }
@@ -621,6 +621,91 @@ dt, dd {
     padding-right: 20px;
 }
 
+.navbar-form {
+    margin: 0;
+    padding: 25px 15px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-form .pagefind-ui {
+    --pagefind-ui-scale: 0.8;
+    --pagefind-ui-primary: #f7a31d;
+    --pagefind-ui-text: #666666;
+    --pagefind-ui-background: rgba(222, 222, 222, 0.2);
+    --pagefind-ui-border: rgba(255, 255, 255, 0.1);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 4px;
+    --pagefind-ui-font: inherit;
+}
+
+.navbar-form .pagefind-ui .pagefind-ui__search-input {
+    padding: 6px 30px 6px 12px;
+    height: 30px;
+    width: 200px;
+    background: rgba(222, 222, 222, 0.2);
+    transition: width 0.3s ease;
+    backdrop-filter: blur(5px);
+    line-height: 30px;
+}
+
+.navbar-form .pagefind-ui .pagefind-ui__search-input:focus {
+    width: 300px;
+}
+
+.navbar-form .pagefind-ui .pagefind-ui__search-clear-button {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-form .pagefind-ui .pagefind-ui__search-clear {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+.navbar-form .pagefind-ui .pagefind-ui__drawer {
+    position: absolute;
+    margin-top: 5px;
+    background: rgba(222, 222, 222, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-height: 400px;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-form .pagefind-ui .pagefind-ui__result-link {
+    color: #f7a31d;
+}
+
+.navbar-form .form-control {
+    width: 200px;
+    border-radius: 4px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.nav-search input:focus {
+    outline: none;
+    border-color: #f7a31d;
+    background: rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.nav-search input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .navbar {
     background-color: rgba(34, 34, 34, 0.8);
     margin-bottom: 0;
@@ -1143,4 +1228,48 @@ footer .netlify > img {
 .widget table tr:first-child td,
 .widget table tr:first-child th {
     border-top: 0px !important;
+}
+
+/* Search Results Styling */
+.pagefind-ui__result {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 12px 12px 12px 24px;
+}
+
+.pagefind-ui__result-thumb {
+    flex: 0 0 80px;
+    height: 80px;
+    background: #fff;
+}
+
+.pagefind-ui__result-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pagefind-ui__result-inner {
+    flex: 1;
+    min-width: 0;
+}
+
+.pagefind-ui__result-title {
+    margin: 0 0 8px 0;
+}
+
+.pagefind-ui__result-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.pagefind-ui__result-link:hover {
+    text-decoration: underline;
+}
+
+.pagefind-ui__result-excerpt {
+    margin: 0;
+    color: #666;
 }

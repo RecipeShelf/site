@@ -3,12 +3,14 @@
 {{ $data := .Data }}
 {{ $singular := .Data.Singular }}
 {{ $plural :=  .Data.Plural }}
-<div class="container-black ui-208">
+<div class="container-black ui-208" data-pagefind-ignore>
     <div class="container">                
         <h3 style="margin: 0px; line-height: 35px; padding-top: 20px;">
             <span class="orange">{{ len $data.Terms }}</span>
             <span class="white">
-            {{ if eq $plural "cuisine" }}
+            {{ if eq $plural "collections" }}
+                collections
+            {{ else if eq $plural "cuisine" }}
                 cuisines    
             {{ else }}
                 {{ $plural }}

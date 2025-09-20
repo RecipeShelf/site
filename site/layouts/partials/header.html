@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/rs.css" type="text/css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/pagefind.css" type="text/css">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+    <script src="/pagefind/pagefind-ui.js"></script>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}favicons/apple-touch-icon-60x60.png">
@@ -61,11 +64,14 @@
                 <a href="{{ .Site.BaseURL }}"><h1 class="orange">Recipe</h1><h1 class="green">Shelf</h1></a>
             </div>
         </div>
-        <div class="navbar-collapse collapse">                
+        <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-xs">
+                        <div id="search"></div>
+                    </li>
                     <li><a href="{{ .Site.BaseURL }}collections/">Collections</a></li>
                     <li><a href="{{ .Site.BaseURL }}cuisine/">Cuisines</a></li>
-                </ul>                
+                </ul>
         </div>
     </div>
 </div>

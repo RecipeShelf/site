@@ -2,6 +2,7 @@ import webpack from "webpack";
 import path from "path";
 
 export default {
+  mode: 'development',
   module: {
     rules: [
       {
@@ -23,7 +24,8 @@ export default {
         use: [{
           loader: "babel-loader",
           options: {
-            cacheDirectory: true
+            cacheDirectory: true,
+            presets: ['@babel/preset-env']
           }
         }]
       }

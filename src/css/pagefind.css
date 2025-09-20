@@ -1,0 +1,137 @@
+.pagefind-ui {
+    margin-top: 20px;
+}
+
+.pagefind-ui__search-input {
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 4px !important;
+    border: 1px solid #ccc !important;
+    height: 34px !important;
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+    line-height: 34px !important;
+    color: #333 !important;
+    background-image: none !important;
+}
+
+.pagefind-ui__search-input::placeholder {
+    color: #666 !important;
+    opacity: 0.8 !important;
+}
+
+.pagefind-ui__search-clear {
+    width: 34px !important;
+    height: 34px !important;
+}
+
+.pagefind-ui__search-icon {
+    display: none !important;
+}
+
+.pagefind-ui__form:before {
+    display: none !important;
+}
+
+.pagefind-ui__drawer {
+    position: absolute !important;
+    margin-top: 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 0 0 4px 4px !important;
+    border: 1px solid #ccc !important;
+    border-top: none !important;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    width: 300px !important;
+    z-index: 1000 !important;
+}
+
+.pagefind-ui__results-area {
+    padding: 0 !important;
+}
+
+.pagefind-ui__result {
+    padding: 0 !important;
+    border-bottom: 1px solid #eee !important;
+    position: relative !important;
+    cursor: pointer !important;
+}
+
+.pagefind-ui__result:last-child {
+    border-bottom: none !important;
+}
+
+.pagefind-ui__result:hover {
+    background: rgba(247, 163, 29, 0.1) !important;
+}
+
+.pagefind-ui__result::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 1 !important;
+}
+
+.pagefind-ui__result-inner {
+    padding: 8px 12px !important;
+    position: relative !important;
+    z-index: 0 !important;
+}
+
+.pagefind-ui__result-link {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.pagefind-ui__result-title {
+    font-size: 14px !important;
+    margin: 0 !important;
+    color: #333 !important;
+    font-weight: 600 !important;
+}
+
+.pagefind-ui__result-excerpt {
+    font-size: 13px !important;
+    margin: 4px 0 !important;
+    color: #666 !important;
+    line-height: 1.4 !important;
+}
+
+.pagefind-ui__result-info {
+    font-size: 12px !important;
+    color: #f7a31d !important;
+    margin: 0 !important;
+}
+
+.pagefind-ui__message {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    color: #666 !important;
+}
+
+.pagefind-ui__result-link {
+    text-decoration: none !important;
+    display: block !important;
+    cursor: pointer !important;
+    color: inherit !important;
+}
+
+.pagefind-ui__result-link:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.pagefind-ui__clear-button,
+.pagefind-ui__search-clear,
+.pagefind-ui__search-clear.svelte-e9gkc3 {
+    display: none !important;
+}
+
+.pagefind-ui mark {
+    background: rgba(247, 163, 29, 0.2) !important;
+    color: inherit !important;
+    padding: 0 2px !important;
+    border-radius: 2px !important;
+}
