@@ -29,7 +29,6 @@ cb.initApp = function () {
         $(this).closest('.details').find('.step-selected-text').removeClass('step-selected-text');
         $icons.filter('.fa-square-o').first().siblings().addClass('step-selected-text');
         var index = $icons.index($step);
-        amplitude.logEvent("Recipe Step Selected", { recipe: $(this).closest('.widget').find('.name').text(), stepIndex: index, stepPercent: Math.round(((index + 1) * 100) / $icons.length) + '%' });
     });
 
     $(".w-scroll").niceScroll({
@@ -39,7 +38,6 @@ cb.initApp = function () {
   
     $body.off('click', '.shareByFacebook');
     $body.on('click', '.shareByFacebook', function (e) {
-        amplitude.logEvent("Share by Facebook Clicked", { recipe: $(this).closest('.widget').find('.name').text() });
         var url = $(this).closest('.shareByFacebook').data('href');
         FB.ui({
             method: 'share',
@@ -49,7 +47,6 @@ cb.initApp = function () {
 
     $body.off('click', '.shareByPinterest');
     $body.on('click', '.shareByPinterest', function (e) {
-        amplitude.logEvent("Share by Pintereset Clicked", { recipe: $(this).closest('.widget').find('.name').text() });
         var $btn = $(this).closest('.shareByPinterest');
         var url = $btn.data('href');
         var image_url = $btn.data('image-url');
@@ -62,5 +59,4 @@ $(document).ready(function () {
 
     $("div.navbar-fixed-top").autoHidingNavbar();
 
-    amplitude.logEvent("Page Opened", { page: window.location.href });
 });
