@@ -47,36 +47,6 @@
         window.changeBackground();
         window.setTimeout(window.changeBackground, 60000);
     {{ end }}
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '1043357765687349',
-            xfbml: true,
-            version: 'v2.4'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) { return; }
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    window.pAsyncInit = function () {
-        PDK.init({
-            appId: "4798178932820017348", // Change this
-            cookie: true
-        });
-    };
-
-    (function (d, s, id) {
-        var js, pjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) { return; }
-        js = d.createElement(s); js.id = id;
-        js.src = "//assets.pinterest.com/sdk/sdk.js";
-        pjs.parentNode.insertBefore(js, pjs);
-    }(document, 'script', 'pinterest-jssdk'));
 </script>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">

@@ -35,23 +35,6 @@ cb.initApp = function () {
         cursorcolor: "rgba(0,0,0,0.2)",
         cursorwidth: "5px"
     });
-  
-    $body.off('click', '.shareByFacebook');
-    $body.on('click', '.shareByFacebook', function (e) {
-        var url = $(this).closest('.shareByFacebook').data('href');
-        FB.ui({
-            method: 'share',
-            href: url
-        }, function (response) { });
-    });
-
-    $body.off('click', '.shareByPinterest');
-    $body.on('click', '.shareByPinterest', function (e) {
-        var $btn = $(this).closest('.shareByPinterest');
-        var url = $btn.data('href');
-        var image_url = $btn.data('image-url');
-        PDK.pin(image_url, '', url, function (response) { });
-    });
 };
 
 $(document).ready(function () {
